@@ -9,6 +9,8 @@ import java.util.List;
 
 
 @RestController
+@CrossOrigin(origins ="*", allowedHeaders = {"Authorization", "Origin","Content-Type","Requestor-Type"},maxAge = 3600 , exposedHeaders =
+        {"X-Get-Header","Access-Control-Allow-Origin","Access-Control-Allow-Credentials","Access-Control-Allow-Headers"})
 @RequestMapping("/api/pessoas")
 public class PessoaController {
 
